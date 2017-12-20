@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{41cba0d3-30d8-492e-8cd2-b351342cba00}">
+        <property name="assetPath">
+            <value>flaps/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{927e7177-4610-4040-834b-1e4542d1ea30}</destination>
+        </relationship>
+    </object>
+</objects>
