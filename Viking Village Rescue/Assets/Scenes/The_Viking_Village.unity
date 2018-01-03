@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 545abe2b789631d42ba478c66371d77c, type: 2}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36197078, g: 0.3274903, b: 0.36100665, a: 1}
+  m_IndirectSpecularColor: {r: 0.36128038, g: 0.32681197, b: 0.35753292, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000000, guid: 26af50b01a7fce64db0c40e2b63c41ce,
+  m_LightingDataAsset: {fileID: 112000296, guid: 0d57090fe5fa44597887f8c984779dde,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &5
@@ -253,6 +253,10 @@ Prefab:
     - target: {fileID: 11493084, guid: 5f29f207d858fd245b7befaa18ea3284, type: 2}
       propertyPath: pylonMusic
       value: event:/song
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493084, guid: 5f29f207d858fd245b7befaa18ea3284, type: 2}
+      propertyPath: WalkSoundAutomation
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f29f207d858fd245b7befaa18ea3284, type: 2}
@@ -6354,7 +6358,7 @@ Prefab:
         type: 2}
     - target: {fileID: 2300000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_ScaleInLightmap
-      value: .00700000022
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_CastShadows
@@ -20458,7 +20462,7 @@ Prefab:
         type: 2}
     - target: {fileID: 2300000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_ScaleInLightmap
-      value: .00700000022
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_LightmapIndexDynamic
@@ -20581,6 +20585,10 @@ Prefab:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 1593540980}
+    - target: {fileID: 2300002, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
   m_IsPrefabParent: 0
@@ -21460,7 +21468,7 @@ Prefab:
         type: 2}
     - target: {fileID: 2300000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_ScaleInLightmap
-      value: .00700000022
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_CastShadows
@@ -33466,6 +33474,46 @@ Prefab:
     - target: {fileID: 100012, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
       propertyPath: m_Name
       value: PYLON_01_pf_torch_stick_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823046, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823046, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823046, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823046, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823046, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19847294, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19847294, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19847294, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19847294, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19847294, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}
+      propertyPath: randomSeed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f632ee341faffa64ebfa4e2c74d6e422, type: 2}

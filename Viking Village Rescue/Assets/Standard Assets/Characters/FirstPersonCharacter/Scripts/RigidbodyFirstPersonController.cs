@@ -117,14 +117,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
 
-		// ADDED THIS SHIT
+		// ======================= ADDED THIS SHIT =====================
 
 		// this variable is in unity
 
+//		int isStopped = 0;
 		int isWalking = 0;
 		int isRunning = 0;
 
-		// events
+		// events  
 		[FMODUnity.EventRef]
 		public string walkingSound;
 		FMOD.Studio.EventInstance walkingSoundInst;
@@ -148,6 +149,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public GameObject DramaObject;
 
 		public GameObject DramaObject2, DramaObject3;
+
+		public GameObject WalkSoundAutomation;
 
 
 

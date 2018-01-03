@@ -13,13 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114538302721933562}
-  - {fileID: 114521345076214210}
+  - {fileID: 114907249767448482}
   EditorEvents:
   - {fileID: 114346699526834722}
   - {fileID: 114863941030717244}
-  MasterBankRef: {fileID: 114521345076214210}
+  MasterBankRef: {fileID: 114907249767448482}
   StringsBankRef: {fileID: 114538302721933562}
-  stringsBankWriteTime: 636493840890000000
+  stringsBankWriteTime: 636505126370000000
   cacheVersion: 2
 --- !u!114 &114124083420595090
 MonoBehaviour:
@@ -65,6 +65,21 @@ MonoBehaviour:
   Name: Mix
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114235309422097588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: WalkVolume
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114237182038949062
 MonoBehaviour:
@@ -144,11 +159,12 @@ MonoBehaviour:
   Path: event:/wings
   guid: c808255504b6b34eae6029704e4fb6ba
   Banks:
-  - {fileID: 114521345076214210}
+  - {fileID: 114907249767448482}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 114235309422097588}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114461592792337528
@@ -203,7 +219,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 743776
-  Exists: 1
+  Exists: 0
 --- !u!114 &114538302721933562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: 104_test-FMOD_01/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636493840890000000
+  lastModified: 636505126370000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -255,14 +271,33 @@ MonoBehaviour:
   Path: event:/song
   guid: dd8271d534e04940a579cb116edf261c
   Banks:
-  - {fileID: 114521345076214210}
+  - {fileID: 114907249767448482}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114124083420595090}
+  - {fileID: 114984255032702376}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114907249767448482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/nathanrosenberg/Documents/100_WORK PROJECTS/UNITY PROJECTS/FM104vik/Viking
+    Village Rescue/104_test-FMOD_01/Build/Desktop/Master Bank.bank
+  lastModified: 636505126370000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 744224
+  Exists: 1
 --- !u!114 &114924118635740994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,3 +319,18 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+--- !u!114 &114984255032702376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Mix
+  Min: 0
+  Max: 50
+  Default: 0
