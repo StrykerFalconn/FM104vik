@@ -150,31 +150,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 		public GameObject DramaObject2, DramaObject3;
 
-		public GameObject WalkSoundAutomation;
-
-
+//		public GameObject WalkSoundAutomation;
 
 
 		// Declare vector2 float distance stuff
-
 		float pylon_1 ;
 		float pylon_1_inverse;
 
+//		float WalkingVolume;
 
-
-			
-
-
-
-
-
-
+//======================== START ===========================			
 
 
 
         private void Start()
         {
-
 
 			//ADDED THIS
 
@@ -182,16 +172,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			walkingSoundInst = FMODUnity.RuntimeManager.CreateInstance (walkingSound);
 			walkingSoundInst.start ();
 
-
 			//start Pylon Music
 			pylonMusicInst = FMODUnity.RuntimeManager.CreateInstance (pylonMusic);
 			pylonMusicInst.start ();
 
-
-
 			// end ========
-
-
 
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
@@ -218,6 +203,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			// lets swap this out with the new inverse float
 
 			 pylonMusicInst.setParameterValue ("Mix", pylon_1_inverse);
+
+			walkingSoundInst.setParameterValue ("WalkVolume", 
 
 
             RotateView();
