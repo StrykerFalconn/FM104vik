@@ -204,7 +204,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			 pylonMusicInst.setParameterValue ("Mix", pylon_1_inverse);
 
-			walkingSoundInst.setParameterValue ("WalkVolume", 
+//			walkingSoundInst.setParameterValue ("WalkVolume", 
 
 
             RotateView();
