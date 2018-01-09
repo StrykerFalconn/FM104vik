@@ -168,9 +168,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			//ADDED THIS
 
-			//made inst
+			//made instance 
 			walkingSoundInst = FMODUnity.RuntimeManager.CreateInstance (walkingSound);
 			walkingSoundInst.start ();
+
+	
 
 			//start Pylon Music
 			pylonMusicInst = FMODUnity.RuntimeManager.CreateInstance (pylonMusic);
@@ -204,7 +206,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			 pylonMusicInst.setParameterValue ("Mix", pylon_1_inverse);
 
-//			walkingSoundInst.setParameterValue ("WalkVolume", 
+			walkingSoundInst.setParameterValue ("WalkVolume", isWalking);
 
 
             RotateView();

@@ -33323,6 +33323,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11426204, guid: 9f129d5974a94b84ca74345320c21d3f, type: 2}
+      propertyPath: walkingSound
+      value: event:/wings
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426204, guid: 9f129d5974a94b84ca74345320c21d3f, type: 2}
+      propertyPath: pylonMusic
+      value: event:/song
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f129d5974a94b84ca74345320c21d3f, type: 2}
   m_IsPrefabParent: 0
